@@ -39,6 +39,15 @@ export default function Header({ menuOpen, setMenuOpen }) {
       <div className="actions">
         <button className="pill-btn" aria-pressed={savedOnly} aria-label="Saved items" onClick={toggleSaved}>saved <i>{wish.size}</i></button>
         <button className="pill-btn" aria-label="Open bag" onClick={openCart}>bag <i>{cartCount}</i></button>
+          <a
+    className="pill-btn"
+    href="https://forms.gle/coYid7rTkbpS1FjQ6"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Open automation form"
+  >
+    automation
+  </a>
         <button className="burger" aria-expanded={menuOpen} aria-controls="nav" onClick={() => setMenuOpen(o => !o)}><span>{menuOpen ? "close" : "menu"}</span></button>
       </div>
     </header>
