@@ -46,7 +46,7 @@ export default function Header({ menuOpen, setMenuOpen }) {
     rel="noopener noreferrer"
     aria-label="Open automation form"
   >
-    automation
+   place an order
   </a>
         <button className="burger" aria-expanded={menuOpen} aria-controls="nav" onClick={() => setMenuOpen(o => !o)}><span>{menuOpen ? "close" : "menu"}</span></button>
       </div>
